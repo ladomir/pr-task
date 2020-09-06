@@ -1,5 +1,7 @@
 package com.company.kanel_fraiman.section_8;
 
+import java.util.Scanner;
+
 public class task_8_5 {
     /*
         Даны несколько словесных описаний оператора выбора.
@@ -15,5 +17,22 @@ public class task_8_5 {
     5. Если переменная х содержит положительное значение, увеличить ее значение на 1,
         иначе - уменьшить ее значение на 1.
      */
-    
+    static Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        /*
+        1. Если значение переменной х - положительное число, вывести на экран сообщение Плюс,
+        иначе - вывести на экран сообщение Не плюс.
+         */
+        int x1;
+            System.out.println("Введите значение x1:");
+        x1 = scanner.nextInt();
+
+        if (x1 > 0) {
+            System.out.println("Плюс");
+        } else {
+            System.out.println("Не плюс");
+        }
+
+    }
 }
