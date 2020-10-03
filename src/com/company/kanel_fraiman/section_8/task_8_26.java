@@ -15,13 +15,22 @@ public class task_8_26 {
 
     public static void main(String[] args) {
 
-        int a, b;
+        int a, b, i = 0;
             System.out.println("Введите целое число:");
         a = scanner.nextInt();
+        int n = a;
 
         for (; a > 0; a /= 10){
             b = a % 10;
-                System.out.println(b);
+            i = i * 10 + b;
+        }
+
+        System.out.println(i);
+
+        if (i == n) {
+            System.out.println("Число является паллиндромом!");
+        } else {
+            System.out.println("Число не является паллиндромом!");
         }
             // не завершено
     }
