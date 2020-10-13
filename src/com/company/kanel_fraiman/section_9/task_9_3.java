@@ -19,16 +19,22 @@ public class task_9_3 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b, c, d, d1, d2, e;
+        int a, b, c, d, d1, d2, e, math, eng;
 
             System.out.println("Введите число a:");
         a = scanner.nextInt();
             System.out.println("Введите число b");
         b = scanner.nextInt();
-            System.out.println("Введите число a:");
+            System.out.println("Введите число c:");
         c = scanner.nextInt();
-            System.out.println("Введите число b");
+            System.out.println("Введите число d");
         d = scanner.nextInt();
+            System.out.println("Введите число e:");
+        e = scanner.nextInt();
+            System.out.println("Введите число math");
+        math = scanner.nextInt();
+            System.out.println("Введите число eng");
+        eng = scanner.nextInt();
 
         // Значение переменной - четное, но не заканчивается на 0
         if (a % 2 == 0 && a != 0) {
@@ -62,6 +68,16 @@ public class task_9_3 {
                 }
         }
         // Значение переменной представляет собой «правильную» оценку
+        if (e == 5) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
         // Ученик получил как минимум 4 и по английскому, и по математике
+        if (math >= 4 && eng >= 4) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
     }
 }
