@@ -12,12 +12,12 @@ public class task_9_6 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b, c, a1, b1;
+        int a, b, c;
             System.out.println("Введите целое число a:");
         a = scanner.nextInt();
             System.out.println("Введите целое число b:");
         b = scanner.nextInt();
-            System.out.println("Введите целое число b:");
+            System.out.println("Введите целое число c:");
         c = scanner.nextInt();
 
         if (a < (b + c) && b < (a + c) && c < (a + b)) {
