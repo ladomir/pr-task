@@ -22,8 +22,10 @@ public class task_9_20 {
         c = a % 60; // количество секунд
 
 
-        if (a <= 3600) {
-            System.out.printf("Промежуток времени равен %d минут %d секунд", b, c);
+        if (a <= 3600 && c != 0) {
+            System.out.printf("Промежуток времени - %d минут(a)(ы) %d секунд", b, c);
+        } else if (a <= 3600 && c == 0) {
+            System.out.printf("Промежуток времени - %d минут(a)(ы)", b);
         } else {
             System.out.println("Расчёт не производится");
         }
