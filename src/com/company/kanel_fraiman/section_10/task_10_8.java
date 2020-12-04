@@ -1,5 +1,7 @@
 package com.company.kanel_fraiman.section_10;
 
+import java.util.Scanner;
+
 public class task_10_8 {
     /*
     Напишите класс, который принимает с клавиатуры целое число и затем
@@ -15,4 +17,33 @@ public class task_10_8 {
     • слишком маленькое - если «придуманное» компьютером число
     меньше введенного с клавиатуры.
      */
+
+    static Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int a, b;
+            System.out.println("Введите значение a, которое будет центром диапазона:");
+        a = scanner.nextInt();
+
+        /*
+        Верхней границей диапазона будет значение (), а нижней - ().
+        Подставляем значения в (int)(Math.random()*(c-d+1)+d),
+        где c - верхняя граница, d - нижняя.
+        -------> (int)(Math.random()*(((a+5)-(a-5))+1)+(a-5))
+         */
+        b = (int)(Math.random()*(((a+5)-(a-5))+1)+(a-5));
+
+        System.out.printf("Определённое компьютером число равно %d\n", b);
+
+        if (b == a) {
+            System.out.println("Угадано!");
+        }
+        if (b > a) {
+            System.out.println("Слишком большое!");
+        }
+        if (b < a) {
+            System.out.println("Слишком маленькое!");
+        }
+    }
 }
