@@ -18,11 +18,9 @@ public class task_10_11 {
 
         if ((a + b + c) < 21) {
             System.out.println("Недобор!");
-        }
-        if ((a + b + c) == 21) {
+        } else if ((a + b + c) == 21) {
             System.out.println("Очко!");
-        }
-        if ((a + b + c) == 21) {
+        } else if ((a + b + c) == 21) {
             System.out.println("Перебор!");
         }
     }
