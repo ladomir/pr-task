@@ -16,7 +16,7 @@ public class task_10_18 {
         b = (int) (Math.random() * 900 + 100);
             System.out.printf("Второе сгенерированное трёхзначное число - %d!\n", b);
         c = (int) (Math.random() * 900 + 100);
-            System.out.printf("Третье сгенерированное трёхзначноечисло - %d!\n", c);
+            System.out.printf("Третье сгенерированное трёхзначное число - %d!\n", c);
 
         if (a >= b && a >= c) {
             max = a;
@@ -43,5 +43,4 @@ public class task_10_18 {
             difference = max - min;
         System.out.printf("Разница между наибольшим и наименьшим из сгенерированных чисел составляет %d", max-min);
     }
-
 }
