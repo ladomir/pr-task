@@ -19,14 +19,21 @@ public class task_10_21 {
         y = (int) (Math.random() * 61 - 30);
             System.out.printf("Координата точки по y равна %d!\n", y);
 
-        if ((x >= 0 && y > 0) || (x > 0 && y >= 0)) {
+        if (x > 0 && y > 0) {
             System.out.println("Точка расположена I в четверти.");
-        } else if ((x <= 0 && y > 0) || (x < 0 && y >= 0)) {
+        } else if (x < 0 && y > 0) {
             System.out.println("Точка расположена II в четверти.");
-        } else if ((x <= 0 && y < 0) || (x < 0 && y <= 0)) {
+        } else if (x < 0 && y < 0) {
             System.out.println("Точка расположена III в четверти.");
-        } else {
+        } else if (x > 0 && y < 0) {
             System.out.println("Точка расположена IV в четверти.");
+        } else if(x == 0 && y == 0) {
+            System.out.println("Точка расположена в центре.");
+        } else if ((x < 0 && y == 0) || (x > 0 && y == 0)) {
+            System.out.println("Точка расположена на оси OX.");
+        } else {
+            System.out.println("Точка расположена на оси OY.");
         }
+
     }
 }
