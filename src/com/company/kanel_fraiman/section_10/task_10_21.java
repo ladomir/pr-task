@@ -35,5 +35,13 @@ public class task_10_21 {
             System.out.println("Точка расположена на оси OY.");
         }
 
+        if (Math.abs(x) < Math.abs(y)) {
+            System.out.println("Точка расположена ближе к оси OY.");
+        } else if (Math.abs(x) < Math.abs(y)) {
+            System.out.println("Точка расположена ближе к оси OX.");
+        } else {
+            System.out.println("Точка расположена на одинаковом растоянии к осям.");
+        }
+
     }
 }
