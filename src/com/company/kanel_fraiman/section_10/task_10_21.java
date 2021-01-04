@@ -13,7 +13,7 @@ public class task_10_21 {
      */
     public static void main(String[] args) {
         int x, y;
-        double l, a;
+        double l, ugol;
 
         x = (int) (Math.random() * 61 - 30);
             System.out.printf("Координата точки по x равна %d!\n", x);
@@ -45,10 +45,11 @@ public class task_10_21 {
         }
 
         l = Math.sqrt((Math.pow(x, 2)+(Math.pow(y, 2))));
-            System.out.printf("Расстояние между началом координат и точкой составляет %f\n", l);
-            System.out.println("Округлённое значение между началом координат и точкой составляет " + (int)l);
+            System.out.printf("Расстояние между началом координат и точкой составляет %f.\n", l);
+            System.out.println("Округлённое значение расстояния между началом координат и точкой составляет " + (int)l + ".");
 
-        a = Math.sin(Math.abs(y)/Math.abs(x));
-            System.out.printf("Угол, который образует линия, соединяющая точку с началом координат, с осью Х равен %f градусов", a);
+        ugol = Math.atan(1.0*Math.abs(y)/Math.abs(x));
+        ugol = Math.toDegrees(ugol);
+            System.out.printf("Угол, который образует линия, соединяющая точку с началом координат, с осью Х равен %.0f градуса(ов).", ugol);
     }
 }
