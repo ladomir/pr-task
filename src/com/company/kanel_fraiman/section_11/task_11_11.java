@@ -18,12 +18,11 @@ public class task_11_11 {
             c1 = c / 10;
             c2 = c % 10;
 
-            if (c %5 == 0 && i ==11) {
-                //System.out.print(c + "(" + (c1 + c2) + ")\t");
+            if (c %5 == 0) {
                 if (i >= 1 && i <= 10) {
-                    System.out.println(c + "(" + (c1 + c2) + "),\t");
+                    System.out.print(c + "(" + (c1 + c2) + "),\t");
                 } else {
-                    System.out.println(c + "(" + (c1 + c2) + ").\t");
+                    System.out.print(c + "(" + (c1 + c2) + ").\t");
                 }
             } else {
                 if (i >= 1 && i <= 10) {
