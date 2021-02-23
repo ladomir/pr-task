@@ -2,7 +2,7 @@ package com.company.kanel_fraiman.section_11;
 
 import java.util.Scanner;
 
-public class task_10_26 {
+public class task_11_26 {
     /*
     Напишите класс, который вначале принимает с клавиатуры целое положительное
     число (в переменную х). Затем класс выводит на экран в
