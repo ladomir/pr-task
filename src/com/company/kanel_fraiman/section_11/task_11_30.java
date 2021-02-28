@@ -1,4 +1,4 @@
-package com.company.kanel_fraiman.section_9;
+package com.company.kanel_fraiman.section_11;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class task_11_30 {
     public static void main(String[] args) {
 
         int a, i1, i2;
-            System.out.println("Введите число a:");
+        System.out.println("Введите число a:");
         a = scanner.nextInt();
 
         System.out.println("Отображение чисел: ");
