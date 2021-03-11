@@ -25,7 +25,7 @@ public class task_11_37 {
                 if (i >= 1 && i <= 19) {
                     System.out.print(c + " (" + (int) Math.round(Math.sqrt(c)+0.5) + "),\t");
                 } else {
-                    System.out.print(c + " (" + (int) Math.round(Math.sqrt(c)) + ").\t");
+                    System.out.print(c + " (" + (int) Math.round(Math.sqrt(c)+0.5) + ").\t");
                 }
             }
         }
