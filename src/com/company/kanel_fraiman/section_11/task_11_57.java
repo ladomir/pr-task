@@ -13,13 +13,17 @@ public class task_11_57 {
 
     public static void main(String[] args) {
 
-        int i, a;
+        int i, a, n;
             System.out.println("Введите число a:");
         a = scanner.nextInt();
 
         System.out.println("Отображение чисел: ");
-            for (i = 0, a = 1 ; i < 15; i++, a+=5) {
-                System.out.print(a + "#");
+            for (i = 1, n = 1; i <= 15; i++, n = n + a) {
+                if(i!=15) {
+                    System.out.print(n + "#");
+                } else {
+                    System.out.print(n + "!");
+                }
             }
         System.out.println("\nВсе числа отображены.");
     }
