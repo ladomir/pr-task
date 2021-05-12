@@ -11,13 +11,19 @@ public class task_12_3 {
 
     public static void main(String[] args) {
 
-        int a, count=0;
-        for (int i = 0; i < 12; i++) {
-                a = scanner.nextInt();
-//            if (a%2==0) {
-//                count++;
-//            }
+        int count=0;
+            System.out.println("Элементы массива:");
+        int [] array = new int [12];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt();
+                if(array[i]>array[0]){
+                    count++;
+                }
         }
-        System.out.printf("Количество чисел, больших за первое - %d!", count);
+        System.out.println();
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + "\t");
+        }
+        System.out.printf("\nКоличество чисел, больших за первое - %d!", count);
     }
 }
