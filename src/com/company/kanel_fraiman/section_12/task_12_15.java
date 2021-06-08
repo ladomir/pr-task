@@ -13,16 +13,16 @@ public class task_12_15 {
 
     public static void main(String[] args) {
 
-        int x, n, count = 0;
+        int x, count = 0;
             System.out.println("Введите целое положительное число Х: ");
         x = scanner.nextInt();
-        n = x;
-        for (int i = 2; i < n; i++) {
+        for (int i = 2; i < x; i++) {
 
             if (x%i==0 ) {
                 count++;
+                System.out.print(i + "\t");
             }
         }
-            System.out.printf("Количество делителей в ведённом числе равно %d!", count);
+            System.out.printf("\nКоличество делителей в ведённом числе равно %d!", count);
     }
 }
