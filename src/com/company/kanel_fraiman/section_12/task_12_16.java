@@ -11,14 +11,18 @@ public class task_12_16 {
 
     public static void main(String[] args) {
 
-        int x, count = 0;
+        int i, x, count = 0;
             System.out.println("Введите целое положительное число Х: ");
         x = scanner.nextInt();
 
-//        if (x%1==0 && x%x==0) {
-//                System.out.println("Введённое число является простым!");
-//        } else {
-//            System.out.println("Введённое число НЕ является простым!");
-//        }
+        for (i = 2; i < x; i++) {
+
+            if (x%i == 0) {
+                System.out.println("Введённое число НЕ является простым!");
+            } else {
+                System.out.println("Введённое число является простым!");
+            }
+        }
+        System.out.println();
     }
 }
