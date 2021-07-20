@@ -3,11 +3,13 @@ package com.company.kanel_fraiman.section_13;
 import java.util.Scanner;
 
 public class task_13_12 {
+
     /*
         Напишите класс, который принимает с клавиатуры оценки 30 учеников класса и выводит на экран:
     • среднюю арифметическую оценку класса;
     • число учеников, получивших неудовлетворительные оценки.
      */
+
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
