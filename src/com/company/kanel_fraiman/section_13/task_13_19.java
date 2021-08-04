@@ -24,9 +24,9 @@ public class task_13_19 {
                     count++;
                     sum += i;
                 }
-            System.out.println();
-            System.out.println(count);
-            System.out.println(sum);
         }
+        System.out.println();
+        System.out.println(count);
+        System.out.println(sum);
     }
 }
