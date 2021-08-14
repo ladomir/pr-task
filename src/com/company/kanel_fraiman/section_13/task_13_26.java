@@ -8,11 +8,12 @@ public class task_13_26 {
      */
     public static void main(String[] args) {
 
-        int a = -30, b = 30, x;
+        int a = -30, b = 30;
 
         int [] array = new int [15];
 
         for (int i = 1; i <= array.length-1; i++) {
+
             array[i] = (int) (Math.random() * (b - a + 1) + a);
 
             if(array[i]>=0 && array[i-1]>=0){

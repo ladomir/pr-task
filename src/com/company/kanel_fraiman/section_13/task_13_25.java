@@ -12,6 +12,7 @@ public class task_13_25 {
         int [] array = new int [25];
 
         for (int i = 0; i < array.length; i++) {
+
             array[i] = (int) (Math.random() * (b - a + 1) + a);
 
             if(array[i]%array[0]==0){
