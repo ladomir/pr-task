@@ -8,26 +8,18 @@ public class task_13_26 {
      */
     public static void main(String[] args) {
 
-        int a = -30, b = 30;
+        int a = -30, b = 30, x;
 
         int [] array = new int [15];
 
-        for (int i = 0; i < array.length; i++) {
-
+        for (int i = 1; i <= array.length-1; i++) {
             array[i] = (int) (Math.random() * (b - a + 1) + a);
 
-            System.out.print(array[i] + "\t");
-
-//            if(array[i]>=0) {
-//                if (array[i-1]>=0) {
-//                    System.out.print(array[i] + "\t");
-//                }
-//            }
-//            if(array[i]<0) {
-//                if (array[i-1]<0) {
-//                    System.out.print(array[i] + "\t");
-//                }
-//            }
+            if(array[i]>=0 && array[i-1]>=0){
+                System.out.print(array[i] + "\t");
+            } else if(array[i]<0 && array[i-1]<0){
+                System.out.print(array[i] + "\t");
+            }
         }
     }
 }
