@@ -13,29 +13,27 @@ public class task_13_28 {
     соответствующее текстовое сообщение.
 
     Арифметическая прогрессия: an = a1+d(n-1)
+
+    d = (a2 - a1) / (n2 - n1)
      */
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-        int a1, n1, a2, n2, d1, d2;
-            System.out.println("Введите значение и порядковый номер одного члена арифметической прогрессии: ");
+        int a1, n1, a2, n2, d;
+            System.out.println("Введите значение первого члена арифметической прогрессии: ");
         a1 = scanner.nextInt();
+            System.out.println("Введите порядковый номер первого члена арифметической прогрессии: ");
         n1 = scanner.nextInt();
-            System.out.println("Введите значение и порядковый номер другого члена арифметической прогрессии: ");
+            System.out.println("Введите значение конечного члена арифметической прогрессии: ");
         a2 = scanner.nextInt();
+            System.out.println("Введите порядковый номер конечного члена арифметической прогрессии: ");
         n2 = scanner.nextInt();
 
-//        d1 = b -a;
-//        d2 = c - b;
+        d = (a2 - a1) / (n2 - n1); // шаг прогресси
 
-//        if (d1!=d2) {
-//            System.out.println(" Введённые значения НЕ являются элементами арифметической прогресси");
-//        } else {
-//            for (int i = 0; i <=14; i++) {
-//                c+=d2;
-//                System.out.print(c + "\t");
-//            }
-//        }
+        for (int i = a1+d; i < a2; i+=d) {
+            System.out.print(i + "\t");
+        }
     }
 }
