@@ -22,7 +22,9 @@ public class task_13_29 {
             a = scanner.nextInt();
                 System.out.printf("\nКоличество балов(максимум 50), которое набрал %d-й участник на втором предварительном этапе: ", i);
             b = scanner.nextInt();
+
                 s = a + b;
+
             if (s >= 0) {
                 System.out.printf("\n%d-й участник набрал %d балов и вышел в финал", i, s);
             } else {
