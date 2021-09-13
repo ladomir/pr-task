@@ -1,0 +1,14 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern=".gitIgnore" type="PLAIN_TEXT" />
+      <mapping pattern="WordTest" type="PLAIN_TEXT" />
+      <mapping pattern="wTest" type="PLAIN_TEXT" />
+      <mapping pattern="testFile" type="PLAIN_TEXT" />
+      <mapping pattern="testFileBuffer" type="PLAIN_TEXT" />
+      <mapping pattern="people" type="PLAIN_TEXT" />
+      <mapping ext="bin" type="PLAIN_TEXT" />
+      <mapping pattern="test_crud" type="SQL" />
+    </extensionMap>
+  </component>
+</application>
