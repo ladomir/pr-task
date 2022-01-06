@@ -2,6 +2,7 @@ package com.company.Tasks_Template.BlogProgrammista.Primer1ProsteyshyyKlass;
 
 public class Main {
     public static void main(String[] args) {
+
         Test1 obj = new Test1();
 
         System.out.println("a: " + obj.a);
