@@ -25,7 +25,7 @@ public class task_15_21_c {
             }
             System.out.printf("Сумма цифр - %d", sum);
             System.out.println();
-            if (sum > 10) {
+            if (sum >= 10) {
                 a = sum;
                 sum = 0;
             }
