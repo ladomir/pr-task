@@ -12,7 +12,7 @@ public class task_15_39 {
     public static void main(String[] args) {
         int a, b = 1, c;
 
-            System.out.println("Ведите число: ");
+            System.out.println("Введите число: ");
         a = scanner.nextInt();
 
         while (b <= a) {
@@ -22,7 +22,5 @@ public class task_15_39 {
                 break;
             }
         }
-
-
     }
 }
