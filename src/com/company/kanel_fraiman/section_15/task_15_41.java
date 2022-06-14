@@ -27,15 +27,19 @@ public class task_15_41 {
                 x /= 2;
                 System.out.println(x);
                 n++;
-                if (x >= y) {
+                while (x >= y) {
                     x /= 2;
-                    System.out.println(x);
                     n++;
-                } else {
-                    System.out.println("f");
+                    if (x > y) {
+                        System.out.println(x);
+                    } else {
+                        return;
+                    }
+                    System.out.println("Общее количество преобразований - " + n);
                 }
+                return;
             }
-            if (x % 2 != 0) {
+            if (x %2 == 1) {
                 while (x != y) {
                     x--;
                     System.out.println(x);
@@ -46,10 +50,18 @@ public class task_15_41 {
 
         if (y > x) {
             if (y % 2 == 0) {
-                while (y != x) {
+                y /= 2;
+                System.out.println(y);
+                n++;
+                while (y >= x) {
                     y /= 2;
-                    System.out.println(y);
                     n++;
+                    if (y > x) {
+                        System.out.println(y);
+                    } else {
+                        return;
+                    }
+                    System.out.println("Общее количество преобразований - " + n);
                 }
             }
             if (y % 2 != 0) {
@@ -61,6 +73,6 @@ public class task_15_41 {
             }
         }
 
-            System.out.printf("Общее количество преобразований %d", n);
+            System.out.printf("Общее количество преобразований - %d", n);
     }
 }
