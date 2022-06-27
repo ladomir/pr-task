@@ -11,11 +11,7 @@ public class task_15_49 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a = 1, n = 0;
-        double s = 0, sum = 0;
-
-//            System.out.println("Введите оценку:");
-//        a = scanner.nextInt();
+        int a = 1, n = 0, sum = 0;
 
         while (a >= 1 && a <= 5) {
                 System.out.println("Введите оценку:");
@@ -23,11 +19,10 @@ public class task_15_49 {
             if (a >= 1 && a <= 5) {
                 sum += a;
                 n++;
-                s = sum / n;
-                    System.out.println("Средняя арифметическая оценка в группе - " + s);
+                    System.out.println("Средняя арифметическая оценка в группе - " + 1.0*sum / n);
             } else {
                 System.out.println("Некорректный ввод");
-                System.out.println("Средняя арифметическая оценка в группе - " + s);
+                System.out.println("Средняя арифметическая оценка в группе - " + 1.0*sum / n);
             }
         }
     }
