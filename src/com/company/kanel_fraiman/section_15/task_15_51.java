@@ -33,13 +33,18 @@ public class task_15_51 {
 
             while (overdraft > 0 || c != 0) {
                 b += c;
-                    System.out.println("Количество денег на счёте - " + b);
-                overdraft = b + a;
-                System.out.println(overdraft);
                 n++;
+                overdraft = b + a;
+                if (overdraft >= 0) {
+                    System.out.println(overdraft);
+                } else {
+                    System.out.println("\nПревышение разрешенного овердарафта!");
+                    System.out.println("\nКоличество денег на счёте - " + (b-c));
+                    System.out.println("Количество выполненных операций - " + (n-1));
+                    return;
+                }
+                    System.out.println("Количество денег на счёте - " + b);
                 c = scanner.nextInt();
             }
-                System.out.println("Количество денег на счёте - " + b);
-                System.out.println("Количество выполненных операций - " + n);
         }
 }
