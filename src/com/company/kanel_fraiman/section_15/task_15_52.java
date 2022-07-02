@@ -36,23 +36,6 @@ public class task_15_52 {
                 System.out.printf("\nИгра закончилась победой второго игрока на %d-м ходе со счётом - %d:%d\n", n, sumY, sumX);
                 return;
             }
-
         }
-//        if (x >= 100 && y >= 100) {
-//            System.out.printf("\nИгра закончилась в ничью на %d-м ходе со счётом - %d:%d\n", n, sumX, sumY);
-//        } else {
-//            return;
-//        }
-//        if (x >= 100) {
-//            System.out.printf("\nИгра закончилась победой первого игрока на %d-м ходе со счётом - %d:%d\n", n, sumX, sumY);
-//        } else {
-//            return;
-//        }
-//        if (y >= 100) {
-//            System.out.printf("\nИгра закончилась победой второго игрока на %d-м ходе со счётом - %d:%d\n", n, sumX, sumY);
-//        } else {
-//            return;
-//        }
-
     }
 }
