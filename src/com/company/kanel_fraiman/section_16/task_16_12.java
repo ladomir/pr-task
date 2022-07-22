@@ -10,25 +10,32 @@ public class task_16_12 {
 
     public static void main(String[] args) {
 
-        int a = 0, max = 0;
+        int a = 0, b = 0, max = 0, maxSum = 0, max2 = 0;
 
-        int s = scanner.nextInt();;
+        int s = scanner.nextInt();
 
         for (int i = 1; i <= s; i++) {
-            int n = 0;
-            System.out.print("\n" + i);
+            int n = 0, sum = 0;
+            System.out.print("\n" + i + ": ");
             for (int j = 1; j <= i; j++) {
                 if (i%j==0) {
                     n++;
-                    System.out.print("+");
+                    sum += j;
+                    System.out.print(j + " ");
                 }
-                if (n > max) {
+                if (n >= max) {
                     max = n;
                     a = i;
+                }
+
+                if (sum > maxSum) {
+                    maxSum = sum;
+                    b = i;
                 }
             }
             System.out.print(" - количество делителей - " + n);
         }
         System.out.println("\nМаксимальное количество делителей - " + max + " (число - " + a + ")");
+        System.out.println("Максимальная сумма делителей - " + maxSum + " (число - " + b + ")");
     }
 }
