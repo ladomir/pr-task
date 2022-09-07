@@ -10,7 +10,7 @@ public class task_16_16 {
 
     public static void main(String[] args) {
 
-        System.out.print("\nВсе чётные двухзначные числа, сумма, которых является четным числом: \n");
+        System.out.print("\nВсе чётные двухзначные числа, сумма которых является четным числом: \n");
 
         for (int i = 10; i < 100; i+=2) {
             int sum = 0;
