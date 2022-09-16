@@ -12,27 +12,33 @@ public class task_16_21 {
 
     public static void main(String[] args) {
 
-        int a, countdigits, sumdigits, countmods, sumall = 0;
+        int a, b, sum = 0, count = 0, summA = 0;
 
         a = scanner.nextInt();
+        b = a;
 
-        while (a > 0) {
-            countmods = 0;
-                for (int i = 2; i <= a/2; i++)
-                if (a % i == 0)
-                    countmods++;
-                countdigits = 0;
-                sumdigits = 0;
+        while (a>0) {
+//            summA += sum;
+                System.out.print("Число " + a + ": ");
+            sum = 0;
+            while (a > 0) {
+                sum += a % 10;
+                count++;
+                a /= 10;
+            }
+                System.out.print("\n\t- количество цифр - " + count + ", их сумма - " + sum);
+            summA += sum;
+                System.out.print("\n\t- делители: ");
 
-                while (a > 0) {
-                    countdigits++;
-                    sumdigits += a%10;
-                    a /= 10;
+                for (int i = 1; i <= b; i++) {
+                if (b % i == 0) {
+                    System.out.print(" " + i);
                 }
-                System.out.println(countdigits + " " + sumdigits + " " + countmods);
-                sumall += sumdigits;
-                a = scanner.nextInt();
+            }
+            System.out.println();
+            a = scanner.nextInt();
+            b = a;
         }
-        System.out.println(sumall);
+        System.out.println("Общая сумма всех цифр введенных чисел - " + summA);
     }
 }
