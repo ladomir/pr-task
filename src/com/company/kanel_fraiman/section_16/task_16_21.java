@@ -12,13 +12,13 @@ public class task_16_21 {
 
     public static void main(String[] args) {
 
-        int a, b, sum = 0, count = 0, summA = 0;
+        int a, b, sum = 0, summA = 0;
 
         a = scanner.nextInt();
         b = a;
 
         while (a>0) {
-//            summA += sum;
+            int count = 0;
                 System.out.print("Число " + a + ": ");
             sum = 0;
             while (a > 0) {
