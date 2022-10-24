@@ -8,6 +8,7 @@ public class task_17_17 {
     Метод возвращает число без его крайней левой цифры.
     Например, для параметра 1234 метод вернет 234, а для параметра 104 -4.
      */
+
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
