@@ -2,8 +2,8 @@ package com.company.kanel_fraiman.section_17;
 
 import java.util.Scanner;
 
-public class task_17_20 {
-    /*
+public class task_17_20a {
+/*
     Напишите метод, который принимает в качестве параметра целое число
     и выводит на экран в одну строку через пробел все делители этого числа (не считая 1 и самого числа).
     В случае если у числа нет ни одного делителя - на экран выводится соответствующее текстовое сообщение.
@@ -17,19 +17,23 @@ public class task_17_20 {
 
         a = scanner.nextInt();
 
-        secret(a);
+        System.out.println(secret(a));
     }
 
-    public static void secret(int a) {
+    public static String secret(int a) {
         int count = 0;
+        String b;
         for (int i = 2; i <= a / 2; i++) {
             if (a % i == 0) {
-                System.out.print(i + " ");
+                b = i + "\t";
+                System.out.print(b);
                 count++;
             }
         }
-            if (count == 0) {
-                System.out.println("Нет");
-            }
+        if (count==0) {
+            return "Нет";
+        } else {
+            return "";
+        }
     }
 }
